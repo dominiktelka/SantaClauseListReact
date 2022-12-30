@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "types": [
+        "../santaClauseList — backend for React/types"
+      ]
+    }
+  }
+}
