@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export const TestView = () =>{
+
+export const ChildView = () =>{
+
     return (
         <>
             <h2>Test!</h2>
+
         </>
     )
 
