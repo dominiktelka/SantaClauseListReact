@@ -16,7 +16,7 @@ export const App = () => {
           <Routes>
               <Route path='/gift' element={<GiftsView/>}></Route>
               <Route path='/gift/:idOfGift' element={<SingleGiftView/>}></Route>
-              <Route path='/child' element={<ChildView/>}></Route>
+              <Route path='/children' element={<ChildView/>}></Route>
               <Route path='*' element={<NotFoundView/>}></Route>
           </Routes>
       </>
