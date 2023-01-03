@@ -24,7 +24,8 @@ export const GiftsList = () =>{
 
     return <>
       <h1>Gifts</h1>
-      <GiftsTable gifts={giftsList} onGiftsChange={refreshGifts}/>
+      <GiftsTable gifts={giftsList}
+                  onGiftsChange={refreshGifts}/>
 
     </>
 }
