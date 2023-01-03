@@ -1,12 +1,15 @@
 import React from 'react';
+import { AddChildren } from '../components/Childrens/AddChildren/AddChildren';
+import { ChildrensList } from '../components/Childrens/ChildrenList';
+
 
 
 export const ChildView = () =>{
 
     return (
         <>
-            <h2>Test!</h2>
-
+            <ChildrensList/>
+            <AddChildren/>
         </>
     )
 
