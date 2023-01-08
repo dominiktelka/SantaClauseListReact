@@ -1,11 +1,12 @@
 import React from 'react';
-import {ChildEntity} from 'types';
+import {ChildEntity, GiftEntity} from 'types';
 import {ChildrenTableRow} from "./ChildrenTableRow";
 
 
 interface Props{
-    children: ChildEntity[];
-    onChildrenChange: () => void;
+    childrenList: ChildEntity[];
+    giftsList:GiftEntity[];
+    onGiftChange: () => void;
 }
 
 export const ChildrenTable = (props:Props) =>(
@@ -18,8 +19,14 @@ export const ChildrenTable = (props:Props) =>(
         </thead>
         <tbody>
         {
-            props.children.map(child =>(
-                <ChildrenTableRow child={child} key={child.id} onChildrenChange={props.onChildrenChange}/>))
+            props.childrenList.map(child =>(
+                <ChildrenTableRow
+                    child={child}
+                    key={child.id}
+                    giftsList={props.giftsList}
+                    onGiftChange={props.onGiftChange}
+                />
+            ))
         }
         </tbody>
     </table>
